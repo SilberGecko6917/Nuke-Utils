@@ -29,7 +29,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("§8§m----------------------------------------");
         Bukkit.getConsoleSender().sendMessage("§7Plugin §8⇒ §4NukePlugin ");
         Bukkit.getConsoleSender().sendMessage("§7Developer §8⇒ §9SilberGecko ");
-        Bukkit.getConsoleSender().sendMessage("§7Version §8⇒ §62.3 ");
+        Bukkit.getConsoleSender().sendMessage("§7Version §8⇒ §61.0 ");
         Bukkit.getConsoleSender().sendMessage("§8§m----------------------------------------");
         Bukkit.getConsoleSender().sendMessage(" ");
 

@@ -1,0 +1,5 @@
+material: TNT # Material in Caps (Has to be a block)
+power: 4 # Power of the explosion (MAX = 150 it will take extreamly long to explode)
+warning: true # if true, it will warn the player if he wants to do it
+cooldown: 5 # Cooldown in seconds
+destroy_bedrock: false

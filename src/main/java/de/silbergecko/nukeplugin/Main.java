@@ -1,9 +1,12 @@
 package de.silbergecko.nukeplugin;
 
+import de.silbergecko.nukeplugin.commands.SettingsCommand;
 import de.silbergecko.nukeplugin.listener.ExplosionListeners;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.Objects;
 
 public final class Main extends JavaPlugin {
 
@@ -35,6 +38,9 @@ public final class Main extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new ExplosionListeners(this), this);
 
+        SettingsCommand settingsCommand = new SettingsCommand(this);
+        Objects.requireNonNull(this.getCommand("nuke-settings")).setExecutor(settingsCommand);
+        Objects.requireNonNull(this.getCommand("nuke-settings")).setTabCompleter(settingsCommand);
     }
 
     @Override

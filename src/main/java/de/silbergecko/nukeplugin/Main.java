@@ -1,9 +1,12 @@
 package de.silbergecko.nukeplugin;
 
+import de.silbergecko.nukeplugin.commands.SettingsCommand;
 import de.silbergecko.nukeplugin.listener.ExplosionListeners;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.Objects;
 
 public final class Main extends JavaPlugin {
 
@@ -13,7 +16,7 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        String blockType = getConfig().getString("material", "TNT"); // Default to TNT
+        String blockType = getConfig().getString("material", "TNT");
         Material material = Material.getMaterial(blockType.toUpperCase());
 
         if (material == null) {
@@ -27,14 +30,17 @@ public final class Main extends JavaPlugin {
 
         Bukkit.getConsoleSender().sendMessage(" ");
         Bukkit.getConsoleSender().sendMessage("§8§m----------------------------------------");
-        Bukkit.getConsoleSender().sendMessage("§7Plugin §8⇒ §4NukePlugin ");
-        Bukkit.getConsoleSender().sendMessage("§7Developer §8⇒ §9SilberGecko ");
-        Bukkit.getConsoleSender().sendMessage("§7Version §8⇒ §61.0 ");
+        Bukkit.getConsoleSender().sendMessage("§7Plugin §8⊳ §4NukePlugin ");
+        Bukkit.getConsoleSender().sendMessage("§7Developer §8⊳ §9SilberGecko ");
+        Bukkit.getConsoleSender().sendMessage("§7Version §8⊳ §61.1 ");
         Bukkit.getConsoleSender().sendMessage("§8§m----------------------------------------");
         Bukkit.getConsoleSender().sendMessage(" ");
 
         Bukkit.getPluginManager().registerEvents(new ExplosionListeners(this), this);
 
+        SettingsCommand settingsCommand = new SettingsCommand(this);
+        Objects.requireNonNull(this.getCommand("nuke-settings")).setExecutor(settingsCommand);
+        Objects.requireNonNull(this.getCommand("nuke-settings")).setTabCompleter(settingsCommand);
     }
 
     @Override

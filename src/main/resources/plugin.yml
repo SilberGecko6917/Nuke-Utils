@@ -3,3 +3,8 @@ version: '${project.version}'
 main: de.silbergecko.nukeplugin.Main
 api-version: '1.20'
 authors: [SilberGecko6917]
+commands:
+  nuke-settings:
+    description: Change the settings of the plugin
+    usage: /<command> <setting> <value>
+    permission: nukeplugin.settings

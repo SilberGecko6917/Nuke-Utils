@@ -35,12 +35,12 @@ In the configuration file (`config.yml`), various settings can be adjusted:
 
 | Minecraft Version | Plugin Version | Release Date  | Changes           | Tested |
 |-------------------|----------------|---------------|-------------------|--------|
-| 1.20              | v1.0-ALPHA     | June 14, 2024 | - Initial release | Yes    |
-| 1.20.1            | v1.0-ALPHA     | June 14, 2024 | - Initial release | Yes    |
-| 1.20.2            | v1.0-ALPHA     | June 14, 2024 | - Initial release | Yes    |
-| 1.20.3            | v1.0-ALPHA     | June 14, 2024 | - Initial release | Yes    |
-| 1.20.4            | v1.0-ALPHA     | June 14, 2024 | - Initial release | Yes    |
-| 1.20.5            | v1.0-ALPHA     | June 14, 2024 | - Initial release | Yes    |
+| 1.20              | v1.1-ALPHA     | June 22, 2024 | - Initial release | Yes    |
+| 1.20.1            | v1.1-ALPHA     | June 22, 2024 | - Initial release | Yes    |
+| 1.20.2            | v1.1-ALPHA     | June 22, 2024 | - Initial release | Yes    |
+| 1.20.3            | v1.1-ALPHA     | June 22, 2024 | - Initial release | Yes    |
+| 1.20.4            | v1.1-ALPHA     | June 22, 2024 | - Initial release | Yes    |
+| 1.20.5            | v1.1-ALPHA     | June 22, 2024 | - Initial release | Yes    |
 
 ## Support
 

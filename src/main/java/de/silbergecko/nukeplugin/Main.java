@@ -16,7 +16,7 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        String blockType = getConfig().getString("material", "TNT"); // Default to TNT
+        String blockType = getConfig().getString("material", "TNT");
         Material material = Material.getMaterial(blockType.toUpperCase());
 
         if (material == null) {
@@ -30,9 +30,9 @@ public final class Main extends JavaPlugin {
 
         Bukkit.getConsoleSender().sendMessage(" ");
         Bukkit.getConsoleSender().sendMessage("§8§m----------------------------------------");
-        Bukkit.getConsoleSender().sendMessage("§7Plugin §8⇒ §4NukePlugin ");
-        Bukkit.getConsoleSender().sendMessage("§7Developer §8⇒ §9SilberGecko ");
-        Bukkit.getConsoleSender().sendMessage("§7Version §8⇒ §61.0 ");
+        Bukkit.getConsoleSender().sendMessage("§7Plugin §8⊳ §4NukePlugin ");
+        Bukkit.getConsoleSender().sendMessage("§7Developer §8⊳ §9SilberGecko ");
+        Bukkit.getConsoleSender().sendMessage("§7Version §8⊳ §61.1 ");
         Bukkit.getConsoleSender().sendMessage("§8§m----------------------------------------");
         Bukkit.getConsoleSender().sendMessage(" ");
 
